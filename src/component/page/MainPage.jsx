@@ -17,6 +17,12 @@ const Wrapper = styled.div`
 const Container = styled.div`
     width: 100px;
     max-width: 720px;
+
+    & > * {
+        :not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
 `;
 
 function MainPage(props){
@@ -35,7 +41,7 @@ function MainPage(props){
 
                 <PostList
                     posts={data}
-                    onClickItem={() => {
+                    onClickItem={(item) => {
                         navigate(`/post/${item.id}`);
                     }} />
             </Container>

@@ -16,6 +16,12 @@ const Wrapper = styled.dic`
 const Container = styled.div`
     width: 100px;
     max-width: 720px;    
+    
+    & > * {
+        :not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
 `;
 
 function PostWritePage(props) {

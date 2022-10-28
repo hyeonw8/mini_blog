@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     }
 `;
 
-const TitleText = sytled.p`
+const TitleText = styled.p`
     font-size:20px;
     font-weight:500;    
 `;
